@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        th,
+        td {
+            border: 1px, solid black;
+        }
+
+        tfoot {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tabelas</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Produtos</th>
+                <th>Quantidade</th>
+                <th>Preco</th>
+                <th>Desconto</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Xbox One</td>
+                <td>1</td>
+                <td>100$</td>
+                <td rowspan="2">0$</td>
+            </tr>
+
+            <tr>
+                <td>Playstation</td>
+                <td>1</td>
+                <td>130$</td>
+            </tr>
+
+            <tr>
+                <td>Computador</td>
+                <td>2</td>
+                <td>800$</td>
+                <td>10$</td>
+            </tr>
+
+            <tr>
+                <td>Samsung s23</td>
+                <td>1</td>
+                <td>250$</td>
+                <td>20$</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Valor total</td>
+                <td>2050$</td>
+            </tr>
+
+        </tfoot>
+
+    </table>
+
+
+</body>
+
+</html>
