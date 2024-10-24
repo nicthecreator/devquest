@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="./CSS/reset.css">
+  <link rel="stylesheet" href="./CSS/style.css">
+
+<body>
+
+
+  <!-- Inicio Form Cadastro Cliente -->
+  <div class="container">
+    <div class="card-form">
+      <div class="card-header">
+        <h1 class="text-header">Cadastre-se</h1>
+        <p class="subtext-header">É rápido e fácil</p>
+      </div>
+      <hr>
+      <div class="card-formulario">
+        <form class="formulario-cadastro" method="post" action="../Controle/ControleClte.php">
+
+          <label for="inputEmail">Email</label>
+          <input type="email" name="email" id="inputEmail">
+          <br>
+          <label for="inputSenha">Senha</label>
+          <input type="password" name="senhaCliente" id="inputSenha">
+          <br>
+          <label for="inputNome">Nome</label>
+          <input type="text" name="name" id="inputNome">
+          <br>
+          <label for="inputSobrenome">Sobrenome</label>
+          <input type="text" name="sobrenome" id="inputSobrenome">
+          <br>
+          <label for="inputCpf">CPF</label>
+          <input type="number" name="cpf" id="inputCpf">
+          <br>
+          <label for="inputTelefone">Telefone</label>
+          <input type="number" name="telefone" id="inputTelefone">
+          <br>
+          <label for="inputEndereco">Endereço</label>
+          <input type="text" name="endereco" id="inputEndereco">
+          <br>
+          <button type="submit" class="cad-se">Cadastrar-se</button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
